@@ -37,15 +37,15 @@ export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 // 
-import {MdButtonModule, 
-  MdCheckboxModule,
+// import {MdButtonModule, 
+//   MdCheckboxModule,
   
-  MdCardModule,
-MdToolbarModule,
-MdDatepickerModule,
-MdInputModule,
-MdNativeDateModule,
-MdGridListModule} from '@angular/material';
+//   MdCardModule,
+// MdToolbarModule,
+// MdDatepickerModule,
+// MdInputModule,
+// MdNativeDateModule,
+// MdGridListModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material';
 import {MatGridListModule} from '@angular/material';
 
@@ -85,16 +85,16 @@ import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.co
     MatSnackBarModule,
    
    
-    MdButtonModule,
+    // MdButtonModule,
     MatSidenavModule,
-    MdButtonModule, 
-    MdCheckboxModule,
-    MdCardModule,
-  MdToolbarModule,
-  MdDatepickerModule,
-  MdInputModule,
-  MdNativeDateModule,
-  MdGridListModule ,
+  //   MdButtonModule, 
+  //   MdCheckboxModule,
+  //   MdCardModule,
+  // MdToolbarModule,
+  // MdDatepickerModule,
+  // MdInputModule,
+  // MdNativeDateModule,
+  // MdGridListModule ,
   MatGridListModule,
 
   //firebase

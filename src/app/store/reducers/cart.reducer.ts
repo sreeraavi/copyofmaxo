@@ -10,7 +10,7 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case ActionTypes.ADD_TO_CART: {
       const addProduct = Object.assign({}, action.payload.product);
-      console.log("array of addproduct"+ addProduct.name);
+      //console.log("array of addproduct"+ addProduct.name);
       addProduct.quantity = action.payload.quantity;
       addProduct.price = (parseInt(addProduct.price) * parseInt(addProduct.quantity)).toFixed(2);
       

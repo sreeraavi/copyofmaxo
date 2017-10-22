@@ -1,6 +1,6 @@
 -#!/bin/sh      
-ssh userName@development-server-ip <<EOF        
- cd /your-project-path  
+ssh  ssh ec2-user@18.220.11.229 <<EOF        
+ cd /github.com/sreeraavi/copyofmaxo/tree/dev
  git pull       
  npm install --production       
  pm2 restart all

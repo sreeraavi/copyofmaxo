@@ -7,7 +7,7 @@ import{ActivatedRoute} from '@angular/router';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import {MdSnackBar} from '@angular/material';
+// import {MdSnackBar} from '@angular/material';
 
 import { Product } from './../models/Product';
 // import { ProductService } from './../services/product.service';
@@ -29,7 +29,7 @@ export class MenuComponent {
 
   // Angular will know to supply an instance of the ProductService & Router when it creates a new ProductComponent
   // Because they are injected in the constructor
-  constructor (private _MenuService: MenuService, private route:ActivatedRoute, private router:Router, private cartStore: CartAction,public snackBar: MdSnackBar) {
+  constructor (private _MenuService: MenuService, private route:ActivatedRoute, private router:Router, private cartStore: CartAction) {
   
   }
 
@@ -41,9 +41,9 @@ export class MenuComponent {
   
   openSnackBar(message: string, action: string) {
     
-    this.snackBar.open(message, action, {
-      duration: 2000,
-    });
+    // this.snackBar.open(message, action, {
+    //   duration: 2000,
+    // });
   }
 
   // Dynamic route for detail info when a product is clicked

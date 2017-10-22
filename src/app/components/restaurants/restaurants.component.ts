@@ -3,7 +3,7 @@ import{Router} from '@angular/router';
 
 import{RestuarantService} from '../../services/restuarant.service';
 
-import{MdSidenav} from '@angular/material'
+// import{MdSidenav} from '@angular/material'
 
 @Component({
   selector: 'app-restaurants',
@@ -12,7 +12,7 @@ import{MdSidenav} from '@angular/material'
 })
 export class RestaurantsComponent implements OnInit {
 
-  @ViewChild('sidenav') input: MdSidenav;
+ 
   showup=true;
   showdown=false;
   id;
@@ -32,7 +32,7 @@ ngOnInit(){
 
 side(ide){
 this.details=ide;
-this.input.open();
+// this.input.open();
   
 }
 

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {MatCardModule} from '@angular/material';
-// import {MatSnackBarModule} from '@angular/material';
+import {MatSnackBarModule} from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
@@ -34,20 +34,20 @@ import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthService } from './auth.service';
 export const firebaseConfig = environment.firebaseConfig;
-// import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 // 
-// import {MdButtonModule, 
-//   MdCheckboxModule,
+import {MdButtonModule, 
+  MdCheckboxModule,
   
-//   MdCardModule,
-// MdToolbarModule,
-// MdDatepickerModule,
-// MdInputModule,
-// MdNativeDateModule,
-// MdGridListModule} from '@angular/material';
-// import {MatSidenavModule} from '@angular/material';
-// import {MatGridListModule} from '@angular/material';
+  MdCardModule,
+MdToolbarModule,
+MdDatepickerModule,
+MdInputModule,
+MdNativeDateModule,
+MdGridListModule} from '@angular/material';
+import {MatSidenavModule} from '@angular/material';
+import {MatGridListModule} from '@angular/material';
 
 // Importing the pipe 
 import{KeysPipe} from './productfilter.pipe';
@@ -82,20 +82,20 @@ import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.co
     BrowserAnimationsModule,
     HttpModule,
     MatCardModule,
-    // MatSnackBarModule,
+    MatSnackBarModule,
    
    
-  //   MdButtonModule,
-  //   MatSidenavModule,
-  //   MdButtonModule, 
-  //   MdCheckboxModule,
-  //   MdCardModule,
-  // MdToolbarModule,
-  // MdDatepickerModule,
-  // MdInputModule,
-  // MdNativeDateModule,
-  // MdGridListModule ,
-  // MatGridListModule,
+    MdButtonModule,
+    MatSidenavModule,
+    MdButtonModule, 
+    MdCheckboxModule,
+    MdCardModule,
+  MdToolbarModule,
+  MdDatepickerModule,
+  MdInputModule,
+  MdNativeDateModule,
+  MdGridListModule ,
+  MatGridListModule,
 
   //firebase
   AngularFireModule.initializeApp(firebaseConfig),
